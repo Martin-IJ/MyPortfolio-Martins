@@ -14,7 +14,7 @@ const services = [
   {
     name: "Graphics Design",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nesciunt maxime iste dolore expedita.",
+      "My name is Martins Ohez, I'm a passionate graphic designer. I value simplicity, symmetry and details. With my designs, I always strive for beauty and balance.",
     link: "Learm more",
   },
   {
@@ -46,7 +46,7 @@ const Services = () => {
           >
             <h2 className="h2 text-accent mb-6">What I DO</h2>
             <h3 className="h3 max-w-[455px] mb-16">
-              I'm a Freelance Front-end Developer with over 3 years experience.
+              I'm a Freelance Web Developer, Graphic Designer and Video Editor with over 5 years experience in total.
             </h3>
             <Link to="work"><button className="btn btn-sm">See my work</button></Link>
           </motion.div>
@@ -68,7 +68,7 @@ const Services = () => {
                     key={index}
                   >
                     <div className="max-w-[476px]">
-                      <h4 className="text-[20px] tracking-wider font-primary font-semibold mb-6">
+                      <h4 className="text-[20px] tracking-wider font-primary font-semibold mb-5">
                         {name}
                       </h4>
                       <p className="font-secondary leading-tight">
