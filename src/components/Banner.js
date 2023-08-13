@@ -31,9 +31,9 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="mb-6 text-[36px] lg:text-[60px] font-secondary font-semibold uppercase leading-[1]"
             >
-              <span className="text-white mr-4">I am a</span>
+              <span className="text-white mr-4">I am</span>
               <TypeAnimation
-                sequence={["Developer", 3000, "Designer", 3000, "Editor", 3000]}
+                sequence={["a Developer", 3000, "a Designer", 3000, "an Editor", 3000]}
                 speed={10}
                 wrapper="span"
                 repeat={Infinity}

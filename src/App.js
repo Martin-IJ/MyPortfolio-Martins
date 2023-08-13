@@ -1,5 +1,4 @@
 import React from 'react';
-// components
 import Banner from './components/Banner';
 import Header from './components/Header';
 import Nav from './components/Nav';
@@ -18,7 +17,6 @@ const App = () => {
       <Services />
       <Work />
       <Contact />
-      {/* <div className='h-[4000px]'></div> */}
     </div>
   );
 };

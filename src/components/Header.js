@@ -8,7 +8,7 @@ const Header = () => {
         <div className="flex justify-between items-center">
           <a href="/">
             <h2 className="h2 text-[26px] font-bold font-primary">
-              <span className="text-gradient">Martins</span>
+              <span className="text-gradient">Martin</span>
               <br /> Ohez
             </h2>
           </a>
