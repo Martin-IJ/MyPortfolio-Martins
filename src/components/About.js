@@ -1,5 +1,6 @@
 import React from "react";
 import CountUp from "react-countup";
+import Img from '../assets/MyCV.jpg'
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
@@ -29,10 +30,10 @@ const About = () => {
           >
             <h2 className="h2 text-accent">About me</h2>
             <h3 className="h3 mb-4">
-              I'm a Freelance Front-end Developer with over 3 years experience.
+              I'm a Freelance Software Developer with over 3 years experience.
             </h3>
             <p className="mb-6">
-            Your friendly neighborhood frontend developer, UX architect, and JavaScript engineer. I spend my days (and often nights) painting the Internet canvas with PROJECTS and lines of code, turning zeroes and ones into immersive, interactive experiences.
+            Your friendly neighborhood software developer, UX architect, and JavaScript engineer. I spend my days (and often nights) painting the Internet canvas with PROJECTS and lines of code, turning zeroes and ones into immersive, interactive experiences.
             </p>
             <div className="flex gap-x-6 lg:gap-x-10 mb-12">
               <div>
@@ -67,9 +68,9 @@ const About = () => {
             </div>
             <div className="flex gap-x-8 items-center">
               <Link to="contact"><button className="btn btn-lg">Contact me</button></Link>
-              <Link to="work" className="text-gradient btn-link cursor-pointer">
-                My Portfolio
-              </Link>
+              <a href={Img} target="_blank" className="text-gradient btn-link cursor-pointer">
+                My Resume
+              </a>
             </div>
           </motion.div>
         </div>

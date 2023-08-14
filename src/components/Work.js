@@ -23,9 +23,7 @@ const Work = () => {
                 Work
               </h2>
               <p className="max-w-sm mb-16">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-                magni possimus sit molestiae veniam omnis in nisi temporibus?
-                Ratione, rerum.
+                These are some of my works (best work actually). I'm open to jump on new ideas, jobs or contract for indivuals or company. Shoot me an email below let's get started!
               </p>
               <button onClick={()=> window.open('https://vercel.com/martin-ij')} className="btn btn-sm">View all project</button>
             </div>

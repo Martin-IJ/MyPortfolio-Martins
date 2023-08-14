@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "../assets/avatar2.png";
-import { FaGithub, FaTwitter, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
@@ -76,6 +76,9 @@ const Banner = () => {
               </a>
               <a href="https://linkedin.com/in/martins-ohez-7bb7731a2" target="blank">
                 <FaLinkedin />
+              </a>
+              <a href="https://www.instagram.com/cm_ice/" target="blank">
+                <FaInstagram />
               </a>
             </motion.div>
           </div>

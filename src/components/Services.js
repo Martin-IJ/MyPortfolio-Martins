@@ -8,7 +8,7 @@ const services = [
   {
     name: "Web Development",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nesciunt maxime iste dolore expedita.",
+      "I'm a creative-minded and multi-faced Web Developer driven to create awesome and functional sites with a great experiences.",
     link: "Learm more",
     redLink: 'https://github.com/Martin-IJ',
   },
@@ -22,7 +22,7 @@ const services = [
   {
     name: "Video Editing",
     description:
-      "I possess a remarkable aptitude for conceptualization, allowing me to bring forth stunning creations. Additionally, fine-tune written or spoken words and turning them into representation (motion graphics).",
+      "I fine-tune written or spoken words turning them into visual representation (motion graphics).",
     link: "Learm more",
     redLink: '#',
   },
