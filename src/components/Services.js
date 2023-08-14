@@ -10,24 +10,21 @@ const services = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nesciunt maxime iste dolore expedita.",
     link: "Learm more",
+    redLink: 'https://github.com/Martin-IJ',
   },
   {
     name: "Graphics Design",
     description:
-      "My name is Martins Ohez, I'm a passionate graphic designer. I value simplicity, symmetry and details. With my designs, I always strive for beauty and balance.",
+      "I'm a passionate graphic designer and 3d animator. I value simplicity, symmetry and details. With my designs, I always strive for beauty and balance.",
     link: "Learm more",
+    redLink: '#',
   },
   {
     name: "Video Editing",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nesciunt maxime iste dolore expedita.",
+      "I possess a remarkable aptitude for conceptualization, allowing me to bring forth stunning creations. Additionally, fine-tune written or spoken words and turning them into representation (motion graphics).",
     link: "Learm more",
-  },
-  {
-    name: "Digital Marketing",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nesciunt maxime iste dolore expedita.",
-    link: "Learm more",
+    redLink: '#',
   },
 ];
 
@@ -61,7 +58,7 @@ const Services = () => {
             {/* service list */}
             <div>
               {services.map((service, index) => {
-                const { name, description, link } = service;
+                const { name, description, link, redLink } = service;
                 return (
                   <div
                     className="border-b border-white/20 h-[146px] mb-[38px] flex"
@@ -75,14 +72,13 @@ const Services = () => {
                         {description}
                       </p>
                     </div>
-                    <div className="flex flex-col flex-1 items-end">
+                    <div onClick={()=> window.open(redLink)} className="flex flex-col flex-1 items-end">
                       <a
-                        href="#"
                         className="btn w-9 h-9 mb[42px] flex justify-center items-center"
                       >
                         <BsArrowUpRight />
                       </a>
-                      <a href="#" className="text-gradient text-sm">
+                      <a className="text-gradient text-sm">
                         {link}
                       </a>
                     </div>

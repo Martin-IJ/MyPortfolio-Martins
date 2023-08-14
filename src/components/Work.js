@@ -1,9 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
-import Img1 from "../assets/portfolio-img1.png";
-import Img2 from "../assets/portfolio-img2.png";
-import Img3 from "../assets/portfolio-img3.png";
+import Img1 from "../assets/travelSite.png";
+import Img2 from "../assets/img1.png";
+import Img3 from "../assets/mealsApp.png";
 
 const Work = () => {
   return (
@@ -27,10 +27,10 @@ const Work = () => {
                 magni possimus sit molestiae veniam omnis in nisi temporibus?
                 Ratione, rerum.
               </p>
-              <button onClick={()=> window.open('https://app.netlify.com/teams/martin-ij/overview')} className="btn btn-sm">View all project</button>
+              <button onClick={()=> window.open('https://vercel.com/martin-ij')} className="btn btn-sm">View all project</button>
             </div>
             {/* image */}
-            <div onClick={()=> window.open('https://icecrypto.netlify.app/')} className="group relative overflow-hidden border-2 border-white/50 rounded-xl cursor-pointer">
+            <div onClick={()=> window.open('https://travels-site.vercel.app/')} className="group relative overflow-hidden border-2 border-white/50 rounded-xl cursor-pointer">
               {/* overlay */}
               <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
               {/* img */}
@@ -40,10 +40,10 @@ const Work = () => {
                 alt=""
               />
               {/* pretitle */}
-              <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50"><span className="text-gradient">Crypto Site</span></div>
+              <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50"><span className="text-gradient">Travel Site</span></div>
               {/* title */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
-                <span className="text-2xl text-white">Buy and Sell Anywhere with Zero Risk</span>
+                <span className="text-2xl text-white">Book your flights, hotels and holidays</span>
               </div>
             </div>
           </motion.div>
@@ -54,7 +54,7 @@ const Work = () => {
           viewport={{ once: false, amount: 0.3 }}
           className="flex-1 flex flex-col gap-y-10">
             {/* image */}
-            <div onClick={()=> window.open('https://icetravels.netlify.app/')} className="group relative overflow-hidden border-2 border-white/50 rounded-xl cursor-pointer">
+            <div onClick={()=> window.open('https://martins-burger.vercel.app/')} className="group relative overflow-hidden border-2 border-white/50 rounded-xl cursor-pointer">
               {/* overlay */}
               <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
               {/* img */}
@@ -64,13 +64,13 @@ const Work = () => {
                 alt=""
               />
               {/* pretitle */}
-              <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50"><span className="text-gradient">Travel Site</span></div>
+              <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50"><span className="text-gradient">Burger Site</span></div>
               {/* title */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
-                <span className="text-2xl text-white">Book for Vacation with Ease</span>
+                <span className="text-2xl text-white">Your goto Burger Shop 🍔</span>
               </div>
             </div>
-            <div onClick={()=> window.open('https://martinsmealsapp.netlify.app/')} className="group relative overflow-hidden border-2 border-white/50 rounded-xl cursor-pointer">
+            <div onClick={()=> window.open('https://martinsmealsapp.vercel.app/')} className="group relative overflow-hidden border-2 border-white/50 rounded-xl shadow-inner cursor-pointer">
               {/* overlay */}
               <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
               {/* img */}
