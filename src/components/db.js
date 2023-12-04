@@ -5,11 +5,11 @@ import img4 from '../assets/moviesitee.jpg'
 import img5 from '../assets/bookmark.jpg'
 import img6 from '../assets/imagegallery.jpg'
 import img7 from '../assets/team.jpg'
-import img8 from '../assets/cryptosite.mp4'
+import img8 from '../assets/crypto.gif'
 import img9 from '../assets/tradexpress.jpg'
 import img10 from '../assets/techstudio.jpg'
 import img11 from '../assets/sunnyside.jpg'
-import img12 from '../assets/musicapp.mp4'
+import img12 from '../assets/musicapp.gif'
 
 export const projects = [
   {

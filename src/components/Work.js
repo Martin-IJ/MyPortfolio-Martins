@@ -47,7 +47,7 @@ const Work = () => {
               <div className="group-hover:bg-black/70 w-full h-full absolute z-30 transition-all duration-300"></div>
               {/* img */}
               <img
-                className="group-hover:scale-125 h-full transition-all duration-500"
+                className="group-hover:scale-125 h-[100%] transition-all duration-500"
                 src={Img1}
                 alt=""
               />
@@ -81,23 +81,11 @@ const Work = () => {
                   {/* overlay */}
                   <div className="group-hover:bg-black/70 w-full h-full absolute z-30 transition-all duration-300"></div>
                   {/* img */}
-                  {image.endsWith(".mp4") ? (
-                    <video
-                      className="group-hover:scale-125 transition-all duration-500"
-                      autoPlay
-                      loop
-                      muted
-                    >
-                      <source src={image} type="video/mp4" />
-                      Your browser does not support the video tag.
-                    </video>
-                  ) : (
-                    <img
-                      className="group-hover:scale-125 transition-all duration-500"
-                      src={image}
-                      alt=""
-                    />
-                  )}
+                  <img
+                    className="group-hover:scale-125 transition-all duration-500"
+                    src={image}
+                    alt=""
+                  />
 
                   {/* title */}
                   <div className="absolute -bottom-full left-12 group-hover:top-5 lg:group-hover:top-12 transition-all duration-500 z-40">
