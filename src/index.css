@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body{
+  background-image: url(./assets/site-bg.jpg);
+}
+
 .btn {
   background: linear-gradient(
     92.23deg,
@@ -40,6 +44,10 @@
   border-radius: 100%;
 }
 
+.serviceImg{
+  background-image: url(./assets/services.png)
+}
+
 @layer base {
   body {
     @apply font-secondary text-lg leading-8 text-white;
@@ -66,6 +74,6 @@
     @apply bg-gradient-to-r text-transparent bg-clip-text from-[#42A6E3] to-[#FF56F6] font-bold font-primary hover:from-[#FF56F6] hover:to-[#42A6E3];
   }
   .section {
-    @apply py-8 lg:py-24 lg:h-screen flex items-center;
+    @apply py-8 flex items-center;
   }
 }

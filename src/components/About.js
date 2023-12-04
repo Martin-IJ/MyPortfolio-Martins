@@ -1,10 +1,9 @@
 import React from "react";
 import CountUp from "react-countup";
-import Img from '../assets/MyCV.jpg'
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 
 const About = () => {
   const [ref, inView] = useInView({
@@ -13,7 +12,7 @@ const About = () => {
   return (
     <section className="section" id="about" ref={ref}>
       <div className="container mx-auto">
-        <div className="flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0 h-screen">
+        <div className="flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0">
           <motion.div
             variants={fadeIn("right", 0.3)}
             initial="hidden"
@@ -33,7 +32,10 @@ const About = () => {
               I'm a Freelance Software Developer with over 3 years experience.
             </h3>
             <p className="mb-6">
-            Your friendly neighborhood software developer, UX architect, and JavaScript engineer. I spend my days (and often nights) painting the Internet canvas with PROJECTS and lines of code, turning zeroes and ones into immersive, interactive experiences.
+              Your friendly neighborhood software developer, UX architect, and
+              JavaScript engineer. I spend my days (and often nights) painting
+              the Internet canvas with PROJECTS and lines of code, turning
+              zeroes and ones into immersive, interactive experiences.
             </p>
             <div className="flex gap-x-6 lg:gap-x-10 mb-12">
               <div>
@@ -67,10 +69,19 @@ const About = () => {
               </div>
             </div>
             <div className="flex gap-x-8 items-center">
-              <Link to="contact"><button className="btn btn-lg">Contact me</button></Link>
-              <a href={Img} target="_blank" className="text-gradient btn-link cursor-pointer">
-                My Resume
+              <a
+                href="https://drive.google.com/file/d/1n-ZH937E1__6mZ9t_qsd-kG5uhab6cVI/view?usp=sharing"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <button className="btn btn-lg">My Resume</button>
               </a>
+              <Link
+                to="/contact"
+                className="text-gradient btn-link cursor-pointer"
+              >
+                Contact Me
+              </Link>
             </div>
           </motion.div>
         </div>

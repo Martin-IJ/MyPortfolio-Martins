@@ -1,30 +1,31 @@
 import React from "react";
+import serviceImg from "../assets/services.png";
 import { BsArrowUpRight } from "react-icons/bs";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 
 const services = [
   {
     name: "Web Development",
     description:
-      "I'm a creative-minded and multi-faced Web Developer driven to create awesome and functional sites with a great experiences.",
-    link: "Learm more",
-    redLink: 'https://github.com/Martin-IJ',
+      "I'm a creative-minded and multi-faced Web Developer driven to create awesome and functional sites with great experience.",
+    link: "Learn more",
+    redLink: "https://github.com/Martin-IJ",
   },
   {
     name: "Graphics Design",
     description:
-      "I'm a passionate graphic designer and 3d animator. I value simplicity, symmetry and details. With my designs, I always strive for beauty and balance.",
-    link: "Learm more",
-    redLink: '#',
+      "I'm a passionate graphic designer. I value simplicity and details. With my designs, I always strive for beauty and balance.",
+    link: "Learn more",
+    redLink: "#",
   },
   {
     name: "Video Editing",
     description:
       "I fine-tune written or spoken words turning them into visual representation (motion graphics).",
-    link: "Learm more",
-    redLink: '#',
+    link: "Learn more",
+    redLink: "#",
   },
 ];
 
@@ -39,13 +40,23 @@ const Services = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className="flex-1 lg:bg-services lg:bg-bottom bg-no-repeat mix-blend-lighten mb-12 lg:mb-0"
+            className="flex-1 mix-blend-lighten mb-12 lg:mb-0"
           >
+            <div className="absolute -z-10 hidden lg:flex bottom-20">
+              <img
+                src={serviceImg}
+                alt="serviceImg"
+                className="h-[400px] mix-blend-lighten"
+              />
+            </div>
             <h2 className="h2 text-accent mb-6">What I DO</h2>
-            <h3 className="h3 max-w-[455px] mb-16">
-              I'm a Freelance Web Developer, Graphic Designer and Video Editor with over 5 years experience in total.
+            <h3 className="leading-10 text-[26px] font-semibold max-w-[455px] mb-16">
+              I'm a Freelance Web Developer, Graphic Designer and Video Editor
+              with over 5 years experience in total.
             </h3>
-            <Link to="work"><button className="btn btn-sm">See my work</button></Link>
+            <Link to="/work">
+              <button className="btn btn-sm">See my work</button>
+            </Link>
           </motion.div>
           {/* services */}
           <motion.div
@@ -72,15 +83,16 @@ const Services = () => {
                         {description}
                       </p>
                     </div>
-                    <div onClick={()=> window.open(redLink)} className="flex flex-col flex-1 items-end">
-                      <a
-                        className="btn w-9 h-9 mb[42px] flex justify-center items-center"
-                      >
+                    <div
+                      onClick={() => window.open(redLink)}
+                      className="flex flex-col flex-1 items-end"
+                    >
+                      <span className="btn w-9 h-9 mb-[42px] flex justify-center items-center cursor-pointer">
                         <BsArrowUpRight />
-                      </a>
-                      <a className="text-gradient text-sm">
+                      </span>
+                      <p className="text-gradient text-sm cursor-pointer">
                         {link}
-                      </a>
+                      </p>
                     </div>
                   </div>
                 );
