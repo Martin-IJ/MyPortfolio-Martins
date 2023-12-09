@@ -3,13 +3,14 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 import Img1 from "../assets/travelSite.png";
 import { projects } from "./db";
+import { FaGithub } from "react-icons/fa6";
 
 const Work = () => {
   return (
     <section className="section" id="work">
       <div className="container mx-auto">
         <div className="lg:space-y-10">
-          <div className="lg:flex gap-10 space-y-16 lg:space-y-0 mb-10 lg:mb-0">
+          <div className="lg:flex items-center gap-10 space-y-16 lg:space-y-0 mb-10 lg:mb-0">
             {/* text */}
             <motion.div
               variants={fadeIn("right", 0.3)}
@@ -29,9 +30,9 @@ const Work = () => {
               </p>
               <button
                 onClick={() => window.open("https://github.com/Martin-IJ")}
-                className="btn btn-sm"
+                className="btn btn-sm flex items-center gap-2"
               >
-                View all project
+                My GitHub <FaGithub />
               </button>
             </motion.div>
             {/* image */}
@@ -47,7 +48,7 @@ const Work = () => {
               <div className="group-hover:bg-black/70 w-full h-full absolute z-30 transition-all duration-300"></div>
               {/* img */}
               <img
-                className="group-hover:scale-125 h-[100%] transition-all duration-500"
+                className="group-hover:scale-125 transition-all duration-500"
                 src={Img1}
                 alt=""
               />
