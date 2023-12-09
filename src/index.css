@@ -40,7 +40,7 @@ body{
 
 .active {
   color: #fff;
-  padding: 1rem;
+  /* padding: 1rem; */
   border-radius: 100%;
 }
 
