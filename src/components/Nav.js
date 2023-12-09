@@ -15,25 +15,25 @@ const Nav = () => {
             <BiHomeAlt />
           </NavLink>
           <NavLink
-            to="about"
+            to="/about"
             className="cursor-pointer w-[60px] h-[60px] flex items-center justify-center"
           >
             <BiUser />
           </NavLink>
           <NavLink
-            to="services"
+            to="/services"
             className="cursor-pointer w-[60px] h-[60px] flex items-center justify-center"
           >
             <BsClipboardData />
           </NavLink>
           <NavLink
-            to="work"
+            to="/work"
             className="cursor-pointer w-[60px] h-[60px] flex items-center justify-center"
           >
             <BsBriefcase />
           </NavLink>
           <NavLink
-            to="contact"
+            to="/contact"
             className="cursor-pointer w-[60px] h-[60px] flex items-center justify-center"
           >
             <BsChatSquareText />
