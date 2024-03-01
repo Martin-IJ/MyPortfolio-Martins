@@ -16,7 +16,7 @@ const Banner = () => {
         <div className="flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-12">
           <div className="flex-1 text-center font-secondary lg:text-left">
             <motion.h1
-              variants={fadeIn("up", 0.3)}
+              variants={fadeIn("up", 0)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
@@ -25,7 +25,7 @@ const Banner = () => {
               Martins <span>Ohez</span>
             </motion.h1>
             <motion.div
-              variants={fadeIn("up", 0.4)}
+              variants={fadeIn("up", 0)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
@@ -33,7 +33,14 @@ const Banner = () => {
             >
               <span className="text-white mr-4">I am</span>
               <TypeAnimation
-                sequence={["a Developer", 3000, "a Designer", 3000, "an Editor", 3000]}
+                sequence={[
+                  "a Developer",
+                  3000,
+                  "a Designer",
+                  3000,
+                  "an Editor",
+                  3000,
+                ]}
                 speed={10}
                 wrapper="span"
                 repeat={Infinity}
@@ -41,28 +48,33 @@ const Banner = () => {
               />
             </motion.div>
             <motion.p
-              variants={fadeIn("up", 0.5)}
+              variants={fadeIn("up", 0)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
               className="mb-8 max-w-lg mx-auto lg:mx-0"
             >
-              I'm a creative-minded and multi-faced Web Developer driven to create awesome and functional sites with a great experiences.
+              I'm a creative-minded and multi-faced Web Developer driven to
+              create awesome and functional sites with a great experiences.
             </motion.p>
             <motion.div
-              variants={fadeIn("up", 0.6)}
+              variants={fadeIn("up", 0)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
               className="flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0"
             >
-              <Link to="contact"><button className="btn btn-lg">Contact me</button></Link>
+              <Link to="contact">
+                <button className="btn btn-lg">Contact me</button>
+              </Link>
               <Link to="work" className="text-gradient btn-link cursor-pointer">
                 My Portfolio
               </Link>
             </motion.div>
+
+            {/* Social Links */}
             <motion.div
-              variants={fadeIn("up", 0.7)}
+              variants={fadeIn("up", 0.3)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
@@ -74,7 +86,10 @@ const Banner = () => {
               <a href="https://github.com/Martin-IJ" target="blank">
                 <FaGithub />
               </a>
-              <a href="https://linkedin.com/in/martins-ohez-7bb7731a2" target="blank">
+              <a
+                href="https://linkedin.com/in/martins-ohez-7bb7731a2"
+                target="blank"
+              >
                 <FaLinkedin />
               </a>
               <a href="https://www.instagram.com/cm_ice/" target="blank">
@@ -82,8 +97,9 @@ const Banner = () => {
               </a>
             </motion.div>
           </div>
+          
           <motion.div
-            variants={fadeIn("down", 0.5)}
+            variants={fadeIn("down", 0)}
             initial="hidden"
             whileInView={"show"}
             className="hidden lg:flex flex-1 max-w-[320px] lg:max-w-[482px]"
