@@ -50,7 +50,7 @@ const Services = () => {
               <button className="btn btn-sm">See my work</button>
             </Link>
           </motion.div>
-          
+
           {/* services */}
           <motion.div
             variants={fadeIn("left", 0)}

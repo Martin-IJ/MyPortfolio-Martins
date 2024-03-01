@@ -97,7 +97,7 @@ const Banner = () => {
               </a>
             </motion.div>
           </div>
-          
+
           <motion.div
             variants={fadeIn("down", 0)}
             initial="hidden"

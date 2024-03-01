@@ -26,7 +26,7 @@ const Work = () => {
               </h2>
               <p className="max-w-sm mb-16">
                 These are some of my works (best work actually). I'm open to
-                jump on new ideas, jobs or contract for indivuals or company.
+                jump on new ideas, jobs or contract for individuals or company.
                 Shoot me an email below let's get started!
               </p>
               <Link to="all-works">
