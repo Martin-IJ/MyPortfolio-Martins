@@ -56,8 +56,7 @@ export const projects = [
   },
   {
     id: 7,
-    title: "Team Allocation Manager",
-    description: "Control and manage team members",
+    title: "Team Allocation Manager",    description: "Control and manage team members",
     image: img7,
     link: "https://teamallocation-app.vercel.app/",
   },

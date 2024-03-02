@@ -42,7 +42,7 @@ const Work = () => {
               className="group relative md:w-[50%] overflow-hidden border-2 border-white/50 rounded-xl cursor-pointer"
             >
               {/* overlay */}
-              <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
+              <div className="group-hover:bg-black/70 w-full h-full absolute z-30 transition-all duration-300"></div>
               {/* img */}
               <img
                 className="group-hover:scale-125 transition-all duration-500"
