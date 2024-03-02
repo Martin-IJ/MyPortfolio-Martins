@@ -27,7 +27,7 @@ const AllWork = () => {
               </h2>
               <p className="max-w-sm mb-16">
                 These are some of my works (best work actually). I'm open to
-                jump on new ideas, jobs or contract for indivuals or company.
+                jump on new ideas, jobs or contract for individuals or company.
                 Shoot me an email below let's get started!
               </p>
               <button
@@ -55,7 +55,7 @@ const AllWork = () => {
                 src={Img1}
                 alt=""
               />
-              {/* pretitle */}
+              {/* pre title */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-40">
                 <span className="text-gradient">Travel Site</span>
               </div>
@@ -68,6 +68,7 @@ const AllWork = () => {
             </motion.div>
           </div>
 
+          {/* Mapped Data - My works */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mb-10">
             {/* image */}
             {projects.map((project) => {
@@ -110,7 +111,7 @@ const AllWork = () => {
       <nav className="fixed bottom-2 lg:bottom-8 w-full overflow-hidden z-50">
         <div className="container mx-auto">
           <Link
-            to="home"
+            to="/"
             activeClass="active"
             className="cursor-pointer flex gap-1 items-center justify-center"
           >
