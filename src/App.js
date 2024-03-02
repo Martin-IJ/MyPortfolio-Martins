@@ -6,21 +6,29 @@ import About from "./components/About";
 import Services from "./components/Services";
 import Work from "./components/Work";
 import Contact from "./components/Contact";
+import AllWork from "./components/AllWork";
 import { Route, Routes } from "react-router-dom";
 
 const App = () => {
   return (
-    //  className="bg-site bg-no-repeat bg-cover overflow-hidden"
-    <div>
+    <div className="bg-site bg-no-repeat bg-cover overflow-hidden">
       <Header />
       <Routes>
-        <Route path="/" element={<Banner />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/work" element={<Work />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/all-works" element={<AllWork />} />
+        <Route
+          path="/*"
+          element={
+            <>
+              <Banner />
+              <Nav />
+              <About />
+              <Services />
+              <Work />
+              <Contact />
+            </>
+          }
+        />
       </Routes>
-      <Nav />
     </div>
   );
 };

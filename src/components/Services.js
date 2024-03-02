@@ -9,22 +9,22 @@ const services = [
   {
     name: "Web Development",
     description:
-      "I'm a creative-minded and multi-faced Web Developer driven to create awesome and functional sites with great experience.",
-    link: "Learn more",
+      "I'm a creative-minded and multi-faced Web Developer driven to create awesome and functional sites with a great experiences.",
+    link: "Learm more",
     redLink: "https://github.com/Martin-IJ",
   },
   {
     name: "Graphics Design",
     description:
-      "I'm a passionate graphic designer. I value simplicity and details. With my designs, I always strive for beauty and balance.",
-    link: "Learn more",
+      "I'm a passionate graphic designer and 3d animator. I value simplicity, symmetry and details. With my designs, I always strive for beauty and balance.",
+    link: "Learm more",
     redLink: "#",
   },
   {
     name: "Video Editing",
     description:
       "I fine-tune written or spoken words turning them into visual representation (motion graphics).",
-    link: "Learn more",
+    link: "Learm more",
     redLink: "#",
   },
 ];
@@ -36,7 +36,7 @@ const Services = () => {
         <div className="flex flex-col lg:flex-row">
           {/* text & img */}
           <motion.div
-            variants={fadeIn("right", 0.3)}
+            variants={fadeIn("right", 0)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
@@ -50,17 +50,18 @@ const Services = () => {
               />
             </div>
             <h2 className="h2 text-accent mb-6">What I DO</h2>
-            <h3 className="leading-10 text-[26px] font-semibold max-w-[455px] mb-16">
+            <h3 className="h3 max-w-[455px] mb-16">
               I'm a Freelance Web Developer, Graphic Designer and Video Editor
               with over 5 years experience in total.
             </h3>
-            <Link to="/work">
+            <Link to="work">
               <button className="btn btn-sm">See my work</button>
             </Link>
           </motion.div>
+
           {/* services */}
           <motion.div
-            variants={fadeIn("left", 0.5)}
+            variants={fadeIn("left", 0)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
@@ -87,12 +88,10 @@ const Services = () => {
                       onClick={() => window.open(redLink)}
                       className="flex flex-col flex-1 items-end"
                     >
-                      <span className="btn w-9 h-9 mb-[42px] flex justify-center items-center cursor-pointer">
+                      <a className="btn w-9 h-9 mb[42px] flex justify-center items-center">
                         <BsArrowUpRight />
-                      </span>
-                      <p className="text-gradient text-sm cursor-pointer">
-                        {link}
-                      </p>
+                      </a>
+                      <a className="text-gradient text-sm">{link}</a>
                     </div>
                   </div>
                 );

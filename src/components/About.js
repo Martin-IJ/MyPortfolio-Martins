@@ -1,5 +1,6 @@
 import React from "react";
 import CountUp from "react-countup";
+import Img from "../assets/MyCV.jpg";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
@@ -14,14 +15,15 @@ const About = () => {
       <div className="container mx-auto">
         <div className="flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0">
           <motion.div
-            variants={fadeIn("right", 0.3)}
+            variants={fadeIn("right", 0)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
             className="flex-1 bg-about bg-contain bg-no-repeat h-[520px] mix-blend-lighten bg-top"
           ></motion.div>
+
           <motion.div
-            variants={fadeIn("left", 0.5)}
+            variants={fadeIn("left", 0)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
@@ -69,12 +71,15 @@ const About = () => {
               </div>
             </div>
             <div className="flex gap-x-8 items-center">
+              <Link to="contact">
+                <button className="btn btn-lg">Contact me</button>
+              </Link>
               <a
-                href="https://drive.google.com/file/d/1n-ZH937E1__6mZ9t_qsd-kG5uhab6cVI/view?usp=sharing"
+                href={Img}
                 target="_blank"
-                rel="noreferrer"
+                className="text-gradient btn-link cursor-pointer"
               >
-                <button className="btn btn-lg">My Resume</button>
+                My Resume
               </a>
               <Link
                 to="/contact"

@@ -32,7 +32,7 @@ const Contact = () => {
         <div className="flex flex-col lg:flex-row">
           {/* text */}
           <motion.div
-            variants={fadeIn("right", 0.3)}
+            variants={fadeIn("right", 0)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
@@ -50,7 +50,7 @@ const Contact = () => {
           </motion.div>
           {/* form */}
           <motion.form
-            variants={fadeIn("left", 0.3)}
+            variants={fadeIn("left", 0)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}

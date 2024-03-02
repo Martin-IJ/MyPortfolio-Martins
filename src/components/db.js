@@ -1,15 +1,15 @@
-import img1 from '../assets/img1.png'
-import img2 from '../assets/mealsApp.png'
-import img3 from '../assets/techxcellweb.jpg'
-import img4 from '../assets/moviesitee.jpg'
-import img5 from '../assets/bookmark.jpg'
-import img6 from '../assets/imagegallery.jpg'
-import img7 from '../assets/team.jpg'
-import img8 from '../assets/crypto.gif'
-import img9 from '../assets/tradexpress.jpg'
-import img10 from '../assets/techstudio.jpg'
-import img11 from '../assets/sunnyside.jpg'
-import img12 from '../assets/musicapp.gif'
+import img1 from "../assets/img1.png";
+import img2 from "../assets/mealsApp.png";
+import img3 from "../assets/techxcellweb.jpg";
+import img4 from "../assets/moviesitee.jpg";
+import img5 from "../assets/bookmark.jpg";
+import img6 from "../assets/imagegallery.jpg";
+import img7 from "../assets/team.jpg";
+import img8 from "../assets/crypto.gif";
+import img9 from "../assets/tradexpress.jpg";
+import img10 from "../assets/techstudio.jpg";
+import img11 from "../assets/sunnyside.jpg";
+import img12 from "../assets/musicapp.gif";
 
 export const projects = [
   {
@@ -28,8 +28,8 @@ export const projects = [
   },
   {
     id: 3,
-    title: "Web Development Company Website",
-    description: "Company that provides web development services",
+    title: "Web Development Company",
+    description: "Bring your web desire to life",
     image: img3,
     link: "https://www.techxcell.com/",
   },
@@ -49,15 +49,14 @@ export const projects = [
   },
   {
     id: 6,
-    title: "Image Gallery with drag and drop functionality",
+    title: "Image Gallery - drag and drop",
     description: "email: user@example.com, pwd: 1Password",
     image: img6,
     link: "https://martins-imagegallery.vercel.app/",
   },
   {
     id: 7,
-    title: "Team Allocation Manager",
-    description: "Control and manage team members from one place",
+    title: "Team Allocation Manager",    description: "Control and manage team members",
     image: img7,
     link: "https://teamallocation-app.vercel.app/",
   },
@@ -78,7 +77,7 @@ export const projects = [
   {
     id: 10,
     title: "Tech Studio Academy",
-    description: "Learn web development and other top level technologies",
+    description: "Post, comment and share ideas",
     image: img10,
     link: "https://tech-studio-site.vercel.app/",
   },
