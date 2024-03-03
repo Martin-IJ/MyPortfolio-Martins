@@ -4,7 +4,7 @@ import { FaGithub, FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 
 const Banner = () => {
   return (
@@ -58,23 +58,28 @@ const Banner = () => {
               create awesome and functional sites with a great experiences.
             </motion.p>
             <motion.div
-              variants={fadeIn("up", 0)}
+              variants={fadeIn("right", 0)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
               className="flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0"
             >
-              <Link to="contact">
+              <Link to="contact" smooth={true} spy={true}>
                 <button className="btn btn-lg">Contact me</button>
               </Link>
-              <Link to="work" className="text-gradient btn-link cursor-pointer">
+              <Link
+                to="work"
+                smooth={true}
+                spy={true}
+                className="text-gradient btn-link cursor-pointer"
+              >
                 My Portfolio
               </Link>
             </motion.div>
 
             {/* Social Links */}
             <motion.div
-              variants={fadeIn("up", 0.3)}
+              variants={fadeIn("right", 0.3)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}

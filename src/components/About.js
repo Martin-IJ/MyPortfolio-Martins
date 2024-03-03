@@ -1,10 +1,9 @@
 import React from "react";
 import CountUp from "react-countup";
-import Img from "../assets/MyCV.jpg";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 
 const About = () => {
   const [ref, inView] = useInView({
@@ -71,22 +70,18 @@ const About = () => {
               </div>
             </div>
             <div className="flex gap-x-8 items-center">
-              <Link to="contact">
+              <Link to="contact" smooth={true} spy={true}>
                 <button className="btn btn-lg">Contact me</button>
               </Link>
               <a
-                href={Img}
+                href={
+                  "https://drive.google.com/file/d/18JJhUd1adaja8wkQoUPgUZQCQNelHLbj/view?usp=drive_link"
+                }
                 target="_blank"
                 className="text-gradient btn-link cursor-pointer"
               >
                 My Resume
               </a>
-              <Link
-                to="/contact"
-                className="text-gradient btn-link cursor-pointer"
-              >
-                Contact Me
-              </Link>
             </div>
           </motion.div>
         </div>

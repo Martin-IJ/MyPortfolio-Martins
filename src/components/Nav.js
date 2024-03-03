@@ -18,6 +18,7 @@ const Nav = () => {
           >
             <BiHomeAlt />
           </Link>
+
           <Link
             to="about"
             activeClass="active"
@@ -27,6 +28,7 @@ const Nav = () => {
           >
             <BiUser />
           </Link>
+
           <Link
             to="services"
             activeClass="active"
@@ -36,6 +38,7 @@ const Nav = () => {
           >
             <BsClipboardData />
           </Link>
+
           <Link
             to="work"
             activeClass="active"
@@ -45,6 +48,7 @@ const Nav = () => {
           >
             <BsBriefcase />
           </Link>
+
           <Link
             to="contact"
             activeClass="active"

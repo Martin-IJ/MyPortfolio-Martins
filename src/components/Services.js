@@ -33,7 +33,7 @@ const Services = () => {
   return (
     <section className="section" id="services">
       <div className="container mx-auto">
-        <div className="flex flex-col lg:flex-row">
+        <div className="flex lg:items-center lg:gap-5 flex-col lg:flex-row">
           {/* text & img */}
           <motion.div
             variants={fadeIn("right", 0)}
@@ -42,7 +42,7 @@ const Services = () => {
             viewport={{ once: false, amount: 0.3 }}
             className="flex-1 mix-blend-lighten mb-12 lg:mb-0"
           >
-            <div className="absolute -z-10 hidden lg:flex bottom-20">
+            <div className="absolute -z-10 hidden lg:flex">
               <img
                 src={serviceImg}
                 alt="serviceImg"
@@ -54,9 +54,6 @@ const Services = () => {
               I'm a Freelance Web Developer, Graphic Designer and Video Editor
               with over 2 years experience in total.
             </h3>
-            <Link to="work">
-              <button className="btn btn-sm">See my work</button>
-            </Link>
           </motion.div>
 
           {/* services */}
